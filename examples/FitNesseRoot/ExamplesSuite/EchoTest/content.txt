@@ -1,0 +1,2 @@
+|script|echo|
+|check|echo|echo|echo|

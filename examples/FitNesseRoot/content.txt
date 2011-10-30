@@ -1,0 +1,27 @@
+!*> dotnet
+
+!define dotnet (
+
+!define COMMAND_PATTERN {%m -c runners\dotnet\fitnesse.config -r fitnesse.fitserver.FitServer,runners\dotnet\fit.dll %p}
+!define TEST_RUNNER {dotnet\Runner.exe}
+
+)
+
+*!
+!*> ruby
+
+!define ruby (
+
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {runners\rubyslim\lib\run_ruby_slim.rb}
+!define COMMAND_PATTERN {ruby -I %p %m}
+!define PATH_SEPARATOR { -I }
+
+!path runners\rubyslim\lib
+!path ..\lib
+
+)
+
+*!
+
+${ruby}

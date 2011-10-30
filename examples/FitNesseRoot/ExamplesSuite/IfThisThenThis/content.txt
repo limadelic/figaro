@@ -1,0 +1,4 @@
+|script|
+|da|
+
+!contents -R2 -g -p -f -h

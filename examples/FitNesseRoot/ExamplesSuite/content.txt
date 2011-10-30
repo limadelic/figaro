@@ -1,0 +1,3 @@
+!path ..\lib
+
+!contents -R2 -g -p -f -h
