@@ -1,7 +1,25 @@
-|comment|
-|script|
-|request token|
+!*> scenarios
+
+!|scenario| show token |
+|show|token|
+|show|secret|
+
+!|scenario| request token |
+|twitter|
+|get request token|
+|show|authorize_url|
+|show token|
+
+!|scenario| access token |pin||token||secret|
+|twitter|
+|oauth token|@token|
+|oauth secret|@secret|
+|get access token|@pin|
+|show token|
+
+*!
 
 |comment|
 |script|
+|request token|
 |access token|pin||token||secret|

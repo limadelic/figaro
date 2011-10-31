@@ -40,8 +40,11 @@ module Figaro
       @sut = consumer.get_request_token
     end
 
+    def request_token
+      OAuth::RequestToken.from_hash consumer, token_hash
+    end
+
     def get_access_token(pin)
-      request_token = OAuth::RequestToken.from_hash consumer, token_hash
       @sut = request_token.get_access_token :oauth_verifier => pin
     end
 

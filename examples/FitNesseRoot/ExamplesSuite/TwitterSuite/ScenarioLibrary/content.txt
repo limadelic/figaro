@@ -1,25 +1,5 @@
-!|scenario| setup twitter |
+!|scenario| twitter |
 |start| oauth request |http://api.twitter.com/1|
 |site|twitter|
-
-!|scenario| twitter |
-| setup twitter |
 |oauth token|${token}|
 |oauth secret|${secret}|
-
-!|scenario| show token |
-|show|token|
-|show|secret|
-
-!|scenario| request token |
-|setup twitter|
-|get request token|
-|show|authorize_url|
-|show token|
-
-!|scenario| access token |pin||token||secret|
-|setup twitter|
-|oauth token|@token|
-|oauth secret|@secret|
-|get access token|@pin|
-|show token|
