@@ -4,6 +4,7 @@ GEM
     hashie (1.2.0)
     json (1.6.1)
     mime-types (1.16)
+    oauth (0.4.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
 
@@ -13,4 +14,5 @@ PLATFORMS
 DEPENDENCIES
   hashie
   json
+  oauth
   rest-client

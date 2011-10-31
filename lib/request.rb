@@ -9,19 +9,18 @@ module Figaro
 
     def initialize(url)
       @url = url
-      @options = { :headers => {} }
-    end
-
-    def options
-      @current_option = ''
+      @options = {}
     end
 
     def headers
+      @options[:headers] ||= {}
       @current_option = '[:headers]'
     end
 
     def method_missing(method_name, *args, &blk)
-      eval "@options#{@current_option}[:#{method_name}]=\"#{args.first}\""
+      value = "#{args.first}".gsub("\"", "\\\"")
+      puts "#{value}"
+      eval "@options#{@current_option}[:#{method_name}]=\"#{value}\""
     end
 
     def respond_to?(method_name, include_private=false)
@@ -38,6 +37,10 @@ module Figaro
 
     def post_to(content, resource)
       @sut = client[resource].post content
+    end
+
+    def post(resource)
+      @sut = client[resource].post ''
     end
 
     def put_in(content, resource)
