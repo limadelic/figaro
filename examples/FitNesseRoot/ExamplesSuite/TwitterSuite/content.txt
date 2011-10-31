@@ -1,0 +1,8 @@
+!*< hide me
+
+!define token {uwA8AgW4gf8u2k9usSJuLM2LDADFTrcJluCxqLufSU}
+!define secret {XTXFeAtDDQ2eVhCVAtb8Ew93XxnlGme7adJPYy0M}
+
+*!
+
+!contents -R2 -g -p -f -h
