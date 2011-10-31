@@ -1,0 +1,3 @@
+|scenario| verify succeeded |
+|check| code |200|
+|show| body |

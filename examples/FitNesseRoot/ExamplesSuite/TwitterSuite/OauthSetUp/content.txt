@@ -2,5 +2,6 @@
 |script|
 |request token|
 
+|comment|
 |script|
-|access token|6073795|
+|access token|pin||token||secret|

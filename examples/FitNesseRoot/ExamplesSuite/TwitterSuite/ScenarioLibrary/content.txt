@@ -1,9 +1,9 @@
-!|scenario| setup twitter request |
+!|scenario| setup twitter |
 |start| oauth request |http://api.twitter.com/1|
 |site|twitter|
 
-!|scenario| twitter request |
-| setup twitter request |
+!|scenario| twitter |
+| setup twitter |
 |oauth token|${token}|
 |oauth secret|${secret}|
 
@@ -12,12 +12,14 @@
 |show|secret|
 
 !|scenario| request token |
-|setup twitter request|
+|setup twitter|
 |get request token|
 |show|authorize_url|
 |show token|
 
-!|scenario| access token |pin|
-|twitter request|
-|get access token|pin|
+!|scenario| access token |pin||token||secret|
+|setup twitter|
+|oauth token|@token|
+|oauth secret|@secret|
+|get access token|@pin|
 |show token|

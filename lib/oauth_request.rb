@@ -41,9 +41,16 @@ module Figaro
     end
 
     def get_access_token(pin)
-      puts "#{token_hash}"
       request_token = OAuth::RequestToken.from_hash consumer, token_hash
-      #@sut = request_token.get_access_token :oauth_verifier => pin
+      @sut = request_token.get_access_token :oauth_verifier => pin
+    end
+
+    def access_token
+      OAuth::AccessToken.from_hash consumer, token_hash
+    end
+
+    def get(resource)
+      @sut = access_token.request :get, "#{@url}/#{resource}"
     end
 
   end

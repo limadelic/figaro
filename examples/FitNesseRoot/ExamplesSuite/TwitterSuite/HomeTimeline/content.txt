@@ -1,0 +1,4 @@
+|script|
+|twitter|
+|get|statuses/home_timeline.json|
+|verify succeeded|
