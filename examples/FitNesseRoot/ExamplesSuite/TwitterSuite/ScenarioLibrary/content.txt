@@ -1,0 +1,12 @@
+!|scenario| setup twitter request |
+|start| oauth request |http://api.twitter.com/1|
+|site|twitter|
+
+!|scenario| show token |
+|show|token|
+|show|secret|
+
+!|scenario| request pin |
+|request token|
+|show|authorize_url|
+|show token|
