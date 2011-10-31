@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'json/ext'
 require 'hashie/mash'
-require 'format'
 
 module Figaro
 
