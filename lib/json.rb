@@ -9,11 +9,16 @@ module Figaro
 
     attr_reader :sut
 
-    def initialize(content)
+    def initialize(content, entity='Item')
       Format.slim_arg content
+      load content
+    rescue
+      load "{\"#{entity}\":#{content}}"
+    end
+
+    def load(content)
       @sut = JSON.parse content
       @sut = Hashie::Mash.new @sut
-      rescue
     end
 
     def json
@@ -21,13 +26,14 @@ module Figaro
     end
 
     def set_to(field, value)
-      eval "@sut#{field}=\"#{value}\""
+      eval "@sut.#{field}=\"#{value}\""
     end
 
     def get(field)
-      Format.slim_arg field
-      eval "@sut#{field}.to_s"
+      eval "@sut.#{field}.to_s"
     end
+
+    def echo(echo) echo end
 
   end
 

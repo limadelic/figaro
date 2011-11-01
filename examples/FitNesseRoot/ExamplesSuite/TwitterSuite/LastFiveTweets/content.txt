@@ -1,21 +1,36 @@
 !*> scenarios
 
-!|scenario| load last |count| from |timeline|
+!|scenario| load last |count| tweets from |timeline|
 |get|statuses/@timeline.json?count=@count|
 |$response=|body|
-|start|json|$response|
+|start|json|$response|Tweet|
 
-!|scenario| show tweet |i|
-|show|get|`[@i]["text"]|
+!define tweet_template (!-
+<div style="background-image:url('$user_bk')">
+  <div style="float:right"><img src="$avatar"/></div>
+  <b>$user</b>:</br>
+  $text
+</div>
+-!)
+
+!|scenario| parse tweet |tweet|
+|$text=|get|@tweet.text|
+|$user=|get|@tweet.user.name|
+|$avatar=|get|@tweet.user.profile_image_url|
+|$user_bk=|get|@tweet.user.profile_background_image_url|
+
+!|scenario| tweet |i|
+|parse tweet|Tweet[@i]|
+|check|echo|${tweet_template}||
 
 *!
 
 |script|
 |twitter|
-| load last |5| from |home_timeline|
-|show tweet|0|
-|show tweet|1|
-|show tweet|2|
-|show tweet|3|
-|show tweet|4|
+| load last |5| tweets from |home_timeline|
+|tweet|0|
+|tweet|1|
+|tweet|2|
+|tweet|3|
+|tweet|4|
 
