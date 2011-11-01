@@ -1,0 +1,21 @@
+!*> scenarios
+
+!|scenario| load last |count| from |timeline|
+|get|statuses/@timeline.json?count=@count|
+|$response=|body|
+|start|json|$response|
+
+!|scenario| show tweet |i|
+|show|get|`[@i]["text"]|
+
+*!
+
+|script|
+|twitter|
+| load last |5| from |home_timeline|
+|show tweet|0|
+|show tweet|1|
+|show tweet|2|
+|show tweet|3|
+|show tweet|4|
+

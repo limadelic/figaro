@@ -19,7 +19,6 @@ module Figaro
 
     def method_missing(method_name, *args, &blk)
       value = "#{args.first}".gsub("\"", "\\\"")
-      puts "#{value}"
       eval "@options#{@current_option}[:#{method_name}]=\"#{value}\""
     end
 
