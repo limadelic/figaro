@@ -1,5 +1,35 @@
+!*> vars
+
+!define tweet_template (!-
+<div style="padding:5px;color:#$color;background-image:url('$bk_img');">
+  <div style="float:right"><img src="$avatar"/></div>
+  <b>$user</b>:</br>
+  <p style="padding:3px;background-color:white;border:1px solid #$border_color">$text</p>
+</div>
+-!)
+
+*!
+
 !|scenario| twitter |
 |start| oauth request |http://api.twitter.com/1|
 |site|twitter|
 |oauth token|${token}|
 |oauth secret|${secret}|
+
+!|scenario| load last |count| tweets from |timeline|
+|get|statuses/@timeline.json?count=@count|
+|$response=|body|
+|start|json|$response|Tweet|
+
+!|scenario| parse tweet |tweet|
+|$text=|get|@tweet.text|
+|$user=|get|@tweet.user.name|
+|$avatar=|get|@tweet.user.profile_image_url|
+|$bk_img=|get|@tweet.user.profile_background_image_url|
+|$bk_color=|get|@tweet.user.profile_background_color|
+|$color=|get|@tweet.user.profile_text_color|
+|$border_color=|get|@tweet.user.profile_sidebar_border_color|
+
+!|scenario| tweet |i|
+|parse tweet|Tweet[@i]|
+|check|echo|${tweet_template}||
