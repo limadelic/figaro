@@ -1,2 +1,2 @@
 |script|echo|
-|check|echo|<b>echo</b>||
+|check|echo|echo|echo|

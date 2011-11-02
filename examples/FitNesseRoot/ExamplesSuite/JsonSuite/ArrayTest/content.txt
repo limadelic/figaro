@@ -1,2 +1,2 @@
 |script|json|{"Tweets":[{"X":1},{"X":2}]}|
-|check|get|.Tweets[0].X|1|
+|check|get|Tweets[0].X|1|
