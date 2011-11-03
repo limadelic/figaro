@@ -8,6 +8,12 @@
 </div>
 -!)
 
+!define new_tweet_template (!-
+{
+  "text":"@text"
+}
+-!)
+
 *!
 
 !|scenario| twitter |
@@ -33,3 +39,7 @@
 !|scenario| tweet |i|
 |parse tweet|Tweet[@i]|
 |check|echo|${tweet_template}||
+
+!|scenario| say |text|
+|post|${new_tweet_template}|to|statuses/update.json|
+

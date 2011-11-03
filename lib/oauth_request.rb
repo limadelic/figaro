@@ -56,6 +56,10 @@ module Figaro
       @sut = access_token.request :get, "#{@url}/#{resource}"
     end
 
+    def post_to(content, resource)
+      @sut = access_token.request :post, "/1/#{resource}", content
+    end
+
   end
 
 end

@@ -1,0 +1,4 @@
+|script|
+|twitter|
+|say|hello twitterverse|
+|verify succeeded|

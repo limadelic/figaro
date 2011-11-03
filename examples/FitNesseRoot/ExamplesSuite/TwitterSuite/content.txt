@@ -1,7 +1,12 @@
 !*< hide me
 
+
 !define token {38981100-ICrAldNvoQyLt5YfokuQRLweWhdSgXjb8PMIPvpRz}
 !define secret {R1UeohJf7zejae91DUsc7Lg0jw1BrJsrUHMk1aOTT54}
+
+!define token {401470133-TsI7Qb8VH2GnXmTzQT7brsQyG76oZwPPb8cO2v9g}
+!define secret {0i2PJBGxTJcipfNTncPsDvWtVjFpspH9CrWgASDV6qo}
+
 
 *!
 
