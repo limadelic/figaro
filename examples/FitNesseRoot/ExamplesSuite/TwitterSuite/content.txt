@@ -1,14 +1,1 @@
-!*< hide me
-
-!define consumer_key {RuzufIaOgJrVk8pSXxT2g}
-!define consumer_secret {Tctcwbwfzx6yKUsYDDOFarNNPkIGF5ob9HaxgdE}
-
-!define token_figaroapp {401470133-TsI7Qb8VH2GnXmTzQT7brsQyG76oZwPPb8cO2v9g}
-!define secret_figaroapp {0i2PJBGxTJcipfNTncPsDvWtVjFpspH9CrWgASDV6qo}
-
-!define token_msuarz {38981100-ICrAldNvoQyLt5YfokuQRLweWhdSgXjb8PMIPvpRz}
-!define secret_msuarz {R1UeohJf7zejae91DUsc7Lg0jw1BrJsrUHMk1aOTT54}
-
-*!
-
 !contents -R2 -g -p -f -h

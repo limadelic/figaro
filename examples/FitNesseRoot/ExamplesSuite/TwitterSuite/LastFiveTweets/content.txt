@@ -12,10 +12,7 @@
 *!
 
 |script|
-|twitter|
-|last 5 from |home_timeline|
-
-|script|
-|twitter|
-|last 5 from |user_timeline|
+|msuarz|
+|last 5 from |home|
+|last 5 from |user|
 

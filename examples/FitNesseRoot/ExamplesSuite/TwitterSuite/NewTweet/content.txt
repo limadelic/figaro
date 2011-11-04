@@ -5,7 +5,7 @@
 |wait|3|
 
 |script|
-|load last|1|tweets from|user_timeline|
+|load last|1|tweets from|user|
 |check|get|Tweet[0].text|testing 123|
 |tweet|0|
 

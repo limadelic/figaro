@@ -6,6 +6,33 @@
 |scenario|Butch|
 |msuarz|
 
+|scenario|replay dialog|
+|Fabienne|
+|wait|5|
+|load last |6| tweets from |home|
+|tweet|5|
+|tweet|4|
+|tweet|3|
+|tweet|2|
+|tweet|1|
+|tweet|0|
+
+|scenario|tear down|
+|$id0=|get|Tweet[0].id|
+|$id1=|get|Tweet[1].id|
+|$id2=|get|Tweet[2].id|
+|$id3=|get|Tweet[3].id|
+|$id4=|get|Tweet[4].id|
+|$id5=|get|Tweet[5].id|
+|Fabienne|
+|delete|$id1|
+|delete|$id3|
+|delete|$id5|
+|Butch|
+|delete|$id0|
+|delete|$id2|
+|delete|$id4|
+
 *!
 
 |script|
@@ -22,22 +49,7 @@
 |Butch|
 |say|Zed's dead, baby. Zed's dead|
 
-!*> tear down
-
-|scenario|tear down|
-|load last |3| tweets from |user|
-|$id0=|get|Tweet[0].id|
-|$id1=|get|Tweet[1].id|
-|$id2=|get|Tweet[2].id|
-|delete|$id0|
-|delete|$id1|
-|delete|$id2|
-
 |script|
-|Fabienne|
-|wait|5|
-|tear down|
-|Butch|
+|replay dialog|
 |tear down|
 
-*!
