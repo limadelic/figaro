@@ -1,0 +1,43 @@
+!*> Scenarios
+
+|scenario|Fabienne|
+|figaroapp|
+
+|scenario|Butch|
+|msuarz|
+
+*!
+
+|script|
+|Fabienne|
+|say|Whose motorcycle is this?|
+|Butch|
+|say|It's a chopper, baby.|
+|Fabienne|
+|say|Whose chopper is this?|
+|Butch|
+|say|It's Zed's.|
+|Fabienne|
+|say|Who's Zed?|
+|Butch|
+|say|Zed's dead, baby. Zed's dead|
+
+!*> tear down
+
+|scenario|tear down|
+|load last |3| tweets from |user|
+|$id0=|get|Tweet[0].id|
+|$id1=|get|Tweet[1].id|
+|$id2=|get|Tweet[2].id|
+|delete|$id0|
+|delete|$id1|
+|delete|$id2|
+
+|script|
+|Fabienne|
+|wait|5|
+|tear down|
+|Butch|
+|tear down|
+
+*!

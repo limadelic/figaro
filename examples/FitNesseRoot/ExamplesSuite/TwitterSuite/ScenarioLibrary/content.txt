@@ -1,26 +1,3 @@
-!*> hide me
-
-!define consumer_key {RuzufIaOgJrVk8pSXxT2g}
-!define consumer_secret {Tctcwbwfzx6yKUsYDDOFarNNPkIGF5ob9HaxgdE}
-
-!define figaroapp (
-
-!define token {401470133-TsI7Qb8VH2GnXmTzQT7brsQyG76oZwPPb8cO2v9g}
-!define secret {0i2PJBGxTJcipfNTncPsDvWtVjFpspH9CrWgASDV6qo}
-
-)
-
-!define msuarz (
-
-!define token {38981100-ICrAldNvoQyLt5YfokuQRLweWhdSgXjb8PMIPvpRz}
-!define secret {R1UeohJf7zejae91DUsc7Lg0jw1BrJsrUHMk1aOTT54}
-
-)
-
-${figaroapp}
-
-*!
-
 !*> vars
 
 !define tweet_template (!-
@@ -39,16 +16,31 @@ ${figaroapp}
 
 *!
 
+!|scenario| default user |
+|figaroapp|
+
+!|scenario| figaroapp |
+|user|${token_figaroapp}||${secret_figaroapp}|
+
+!|scenario| msuarz |
+|user|${token_msuarz}||${secret_msuarz}|
+
+!|scenario| user |token||secret|
+|start|echo|
+|$token=|echo|@token|
+|$secret=|echo|@secret|
+
 !|scenario| twitter |
 |start| oauth request |https://api.twitter.com/1|
 |site|twitter|
 |consumer key|${consumer_key}|
 |consumer secret|${consumer_secret}|
-|oauth token|${token}|
-|oauth secret|${secret}|
+|oauth token|$token|
+|oauth secret|$secret|
 
 !|scenario| load last |count| tweets from |timeline|
-|get|statuses/@timeline.json?count=@count|
+|twitter|
+|get|statuses/@timeline_timeline.json?count=@count|
 |$response=|body|
 |start|json|$response|Tweet|
 
@@ -66,9 +58,20 @@ ${figaroapp}
 |check|echo|${tweet_template}||
 
 !|scenario| say |text|
+|twitter|
 |status|@text|
 |post|statuses/update.json|
 
 !|scenario| delete |id|
+|twitter|
 |post|statuses/destroy/@id.json|
+|verify succeeded|
+
+!|scenario| delete #|id|
+|$id=|get|Tweet[@id].id|
+|delete|$id|
+
+!|scenario| delete last |
+|load last |1| tweets from |user|
+|delete #|0|
 
