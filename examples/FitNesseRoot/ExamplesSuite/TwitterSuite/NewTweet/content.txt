@@ -1,4 +1,16 @@
 |script|
 |twitter|
-|say|hello twitterverse|
-|verify succeeded|
+|say|testing 123|
+|response|
+|$id=|get|id|
+
+|script|
+|twitter|
+|wait|3|
+|load last|1|tweets from|user_timeline|
+|check|get|Tweet[0].text|testing 123|
+|tweet|0|
+
+|script|
+|twitter|
+|delete|$id|

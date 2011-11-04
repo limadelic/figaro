@@ -2,10 +2,13 @@ require 'rubygems'
 require 'json/ext'
 require 'hashie/mash'
 require "format"
+require "figaro"
 
 module Figaro
 
   class Json
+
+    include Figaro
 
     attr_reader :sut
 
@@ -32,8 +35,6 @@ module Figaro
     def get(field)
       eval "@sut.#{field}.to_s"
     end
-
-    def echo(echo) echo end
 
   end
 

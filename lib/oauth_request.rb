@@ -6,12 +6,6 @@ module Figaro
 
   class OauthRequest < Request
 
-    def initialize(url)
-      super url
-      @consumer_key = 'RuzufIaOgJrVk8pSXxT2g'
-      @consumer_secret = 'Tctcwbwfzx6yKUsYDDOFarNNPkIGF5ob9HaxgdE'
-    end
-
     def site(value) @site = "http://#{value}.com" end
     def consumer_key(value) @consumer_key = value end
     def consumer_secret(value) @consumer_secret = value end
@@ -57,7 +51,11 @@ module Figaro
     end
 
     def post_to(content, resource)
-      @sut = access_token.request :post, "/1/#{resource}", content
+      @sut = access_token.request :post, "#{@url}/#{resource}", content, @options
+    end
+
+    def post(resource)
+      @sut = access_token.request :post, "#{@url}/#{resource}", @options
     end
 
   end

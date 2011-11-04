@@ -1,9 +1,14 @@
 require 'rubygems'
 require 'rest-client'
+require "figaro"
+
+
 
 module Figaro
 
   class Request
+
+    include Figaro
 
     attr_reader :sut
 

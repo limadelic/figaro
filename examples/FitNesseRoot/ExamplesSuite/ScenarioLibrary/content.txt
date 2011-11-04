@@ -1,3 +1,7 @@
 |scenario| verify succeeded |
 |check| code |200|
-|show| body |
+|check| body ||
+
+|scenario| response |
+|$response=|body|
+|start|json|$response|

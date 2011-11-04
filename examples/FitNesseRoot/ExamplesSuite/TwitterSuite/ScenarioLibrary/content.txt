@@ -17,8 +17,10 @@
 *!
 
 !|scenario| twitter |
-|start| oauth request |http://api.twitter.com/1|
+|start| oauth request |https://api.twitter.com/1|
 |site|twitter|
+|consumer key|${consumer_key}|
+|consumer secret|${consumer_secret}|
 |oauth token|${token}|
 |oauth secret|${secret}|
 
@@ -41,5 +43,9 @@
 |check|echo|${tweet_template}||
 
 !|scenario| say |text|
-|post|${new_tweet_template}|to|statuses/update.json|
+|status|@text|
+|post|statuses/update.json|
+
+!|scenario| delete |id|
+|post|statuses/destroy/@id.json|
 
