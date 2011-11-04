@@ -47,7 +47,7 @@
 |Fabienne|
 |say|Who's Zed?|
 |Butch|
-|say|Zed's dead, baby. Zed's dead|
+|say|Zed's dead, baby. Zed's dead...|
 
 |script|
 |replay dialog|
