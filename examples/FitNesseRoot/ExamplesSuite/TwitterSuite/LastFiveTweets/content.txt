@@ -15,7 +15,6 @@
 |twitter|
 |last 5 from |home_timeline|
 
-|comment|
 |script|
 |twitter|
 |last 5 from |user_timeline|
