@@ -2,8 +2,6 @@ require 'rubygems'
 require 'rest-client'
 require "figaro"
 
-
-
 module Figaro
 
   class Request
@@ -27,7 +25,7 @@ module Figaro
       eval "@options#{@current_option}[:#{method_name}]=\"#{value}\""
     end
 
-    def respond_to?(method_name, include_private=false)
+    def respond_to?(symbol, include_private=false)
       super || @sut.nil?
     end
 
