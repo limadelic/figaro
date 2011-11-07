@@ -4,7 +4,7 @@
 |figaroapp|
 
 |scenario|Butch|
-|msuarz|
+|zunzunapp|
 
 |scenario|replay dialog|
 |Fabienne|
@@ -17,21 +17,20 @@
 |tweet|1|
 |tweet|0|
 
-|scenario|tear down|
+|scenario|delete last 3|
+|load last |3| tweets from |user|
 |$id0=|get|Tweet[0].id|
 |$id1=|get|Tweet[1].id|
 |$id2=|get|Tweet[2].id|
-|$id3=|get|Tweet[3].id|
-|$id4=|get|Tweet[4].id|
-|$id5=|get|Tweet[5].id|
-|Fabienne|
-|delete|$id1|
-|delete|$id3|
-|delete|$id5|
-|Butch|
 |delete|$id0|
+|delete|$id1|
 |delete|$id2|
-|delete|$id4|
+
+|scenario|tear down|
+|Fabienne|
+|delete last 3|
+|Butch|
+|delete last 3|
 
 !define intro (!-
 <iframe width="420" height="315" 
@@ -42,8 +41,8 @@
 
 *!
 
-|script|echo|
-|show|echo|${intro}|
+|script|do|
+|show|the|${intro}|
 
 |script|
 |Fabienne|

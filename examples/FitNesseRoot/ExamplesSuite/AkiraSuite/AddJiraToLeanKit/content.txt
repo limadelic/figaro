@@ -1,0 +1,9 @@
+!|script|
+|jira|ultidev|
+|set|first_story|to|ultidev.getIssuesFromFilter('$jira_stories').first|
+|parse story|first_story|
+
+!|script|
+|new card from jira|
+|add card|
+|delete card| 

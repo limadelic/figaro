@@ -1,0 +1,66 @@
+!*> jira
+
+!|scenario|jira|name|
+|start|do|
+|set|@name|to|Jira4R::JiraTool.new 2, 'http://$jira_server'|
+|@name|.login '$jira_user', '$jira_pass'|
+
+|scenario|parse story|name|
+|$id=|@name|.key|
+|$title=|@name|.summary|
+|$content=|@name|.$jira_story|
+|$cos=|@name|.$jira_cos|
+
+*!
+!*> leankit
+
+!|scenario|leankit|
+|start|request|http://$lkk_site.leankitkanban.com/Kanban/Api/Board/$lkk_board|
+|user|$lkk_user|
+|password|$lkk_pass|
+|headers|
+|content-type|application/json|
+|accept|application/json|
+
+!|scenario|verify that|reply_text|
+|response|
+|check|get|ReplyText|@reply_text|
+
+!|scenario|new card from jira|
+|start|json|{}|
+|set|Title|to|"$title"|
+|set|Description|to|"$content $cos"|
+|set|TypeId|to|$lkk_Feature|
+|set|ExternalSystemName|to|"jira"|
+|set|ExternalSystemUrl|to|"$jira_url/browse/$id"|
+|set|ExternalCardID|to|"$id"|
+|$card=|json|
+
+!|scenario|add card|
+|leankit|$lkk_site|
+|post|$card|to|AddCard/Lane/$lkk_ToDo/Position/0|
+|verify that|The Card was successfully added.|
+|$card_id=|get|ReplyData[0].CardId|
+
+!|scenario|delete card|
+|leankit|$lkk_site|
+|post|DeleteCard/$card_id|
+|verify that|The Card was deleted successfully.|
+
+!|scenario|move|jira_id|to|lane|
+|find card|@jira_id|
+|move card to|@lane|
+
+!|scenario|find card|jira_id|
+|leankit|
+|get|GetCardByExternalId/@jira_id|
+|response|
+|$card_id=|get|ReplyData[0].Id|
+|$card=|get|ReplyData[0].to_json|
+
+!|scenario|move card to|lane|
+|leankit|
+|post|MoveCard/$card_id/Lane/@lane/Position/0|
+|verify that|The Card was moved successfully.|
+
+*!

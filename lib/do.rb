@@ -17,10 +17,6 @@ module Figaro
       @sut = @vars[sut] = eval(expr)
     end
 
-    def query(expr)
-      Items.are eval(expr)
-    end
-
     def method_missing(symbol, *args, &blk)
       @sut = eval "@vars['#{symbol}']#{args.first}"
     end

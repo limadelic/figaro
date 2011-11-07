@@ -1,0 +1,14 @@
+!*> scenarios
+
+!|scenario|stub card|
+|start|json|{}|
+|set|Title|to|"test"|
+|set|TypeId|to|$lkk_Feature|
+|$card=|json|
+
+*!
+
+!|script|
+|stub card|
+|add card|
+|delete card|

@@ -29,7 +29,7 @@ module Figaro
     end
 
     def set_to(field, value)
-      eval "@sut.#{field}=\"#{value}\""
+      eval "@sut.#{field} = #{value}"
     end
 
     def get(field)

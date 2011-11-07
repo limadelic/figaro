@@ -12,7 +12,6 @@
 *!
 
 |script|
-|msuarz|
+|figaroapp|
 |last 5 from |home|
-|last 5 from |user|
 

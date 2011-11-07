@@ -1,0 +1,18 @@
+!*> vars
+
+!define jira_fields (!-
+  key, summary,
+  $jira_story as story,
+  $jira_cos as cos
+-!)
+
+*!
+
+!|script|
+|jira|ultidev|
+|select|${jira_fields}|from|ultidev.getIssuesFromFilter '$jira_stories'|
+
+|query:Items|
+|key|summary|story|cos|
+|UP-3064||||
+|ULTI-37440||||

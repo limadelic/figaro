@@ -6,8 +6,8 @@
 !define token_figaroapp {401470133-TsI7Qb8VH2GnXmTzQT7brsQyG76oZwPPb8cO2v9g}
 !define secret_figaroapp {0i2PJBGxTJcipfNTncPsDvWtVjFpspH9CrWgASDV6qo}
 
-!define token_msuarz {38981100-ICrAldNvoQyLt5YfokuQRLweWhdSgXjb8PMIPvpRz}
-!define secret_msuarz {R1UeohJf7zejae91DUsc7Lg0jw1BrJsrUHMk1aOTT54}
+!define token_zunzunapp {87839102-Jl3DvtAN9y8DqcjSerhBVCDMRa5msR9nck1M7vCSz}
+!define secret_zunzunapp {SjkVDddtLRrzKPgSwIY8j0v9F7sfvt4TlFG9soGvyiE}
 
 *!
 
@@ -35,13 +35,13 @@
 !|scenario| figaroapp |
 |user|${token_figaroapp}||${secret_figaroapp}|
 
-!|scenario| msuarz |
-|user|${token_msuarz}||${secret_msuarz}|
+!|scenario| zunzunapp |
+|user|${token_zunzunapp}||${secret_zunzunapp}|
 
 !|scenario| user |token||secret|
-|start|echo|
-|$token=|echo|@token|
-|$secret=|echo|@secret|
+|start|do|
+|$token=|to|@token|
+|$secret=|to|@secret|
 
 !|scenario| twitter |
 |start| oauth request |https://api.twitter.com/1|

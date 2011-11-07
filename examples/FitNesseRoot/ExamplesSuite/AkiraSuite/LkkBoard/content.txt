@@ -1,0 +1,5 @@
+!|script|
+|leankit|
+|get|GetBoardIdentifiers|
+|verify that|The Board Identifiers were retrieved successfully.|
+

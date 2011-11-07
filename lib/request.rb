@@ -30,6 +30,7 @@ module Figaro
     end
 
     def client
+      RestClient.log = "rest.log"
       RestClient::Resource.new @url, @options
     end
 

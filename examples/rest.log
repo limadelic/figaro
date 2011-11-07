@@ -1,0 +1,188 @@
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"*/*; q=0.5, application/xml", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34"
+# => 200 OK | application/json 103 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"*/*; q=0.5, application/xml", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34"
+# => 200 OK | application/json 103 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"*/*; q=0.5, application/xml", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"*/*; q=0.5, application/xml", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 127 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 127 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 127 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 127 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18083038", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18083039", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18084455", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"Title\":\"test\",\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18084456", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18084457", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"19", "Content-Type"=>"application/json"
+# => 200 OK | application/json 89 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"301", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18084464", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18084465", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18085961", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078132/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/ReplyText", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 302 Found | text/html 200 bytes
+RestClient.get "http://akira.leankitkanban.com/Error/Unknown?aspxerrorpath=/Kanban/Api/Board/18076193/ReplyText", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | text/html 1851 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078132/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078133/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18086986", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18086987", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 703 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18086991", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18086992", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18086994", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18086995", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18087001", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18087002", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3064\",\"ExternalCardID\":\"UP-3064\",\"TypeId\":18076557,\"Title\":\"Engines code coverage\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure the code covered by tests\\nCode coverage should be measured in Teamcity . Calculate and display code coverage for Engines\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"316", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18087003", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18087004", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
