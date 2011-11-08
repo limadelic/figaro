@@ -1,13 +1,6 @@
 |script|
-|say|testing 123|
-|response|
-|$id=|get|id|
+|tweet|testing 123|
 |wait|3|
-
-|script|
-|load last|1|tweets from|user|
-|check|get|Tweet[0].text|testing 123|
-|tweet|0|
-
-|script|
+|load last tweet from|user|
+|check|the|$text|testing 123|
 |delete|$id|

@@ -51,6 +51,10 @@
 |oauth token|$token|
 |oauth secret|$secret|
 
+!|scenario| load last tweet from |timeline|
+| load last |1| tweets from |@timeline|
+| parse tweet |Tweet[0]|
+
 !|scenario| load last |count| tweets from |timeline|
 |twitter|
 |get|statuses/@timeline_timeline.json?count=@count|
@@ -58,6 +62,7 @@
 |start|json|$response|Tweet|
 
 !|scenario| parse tweet |tweet|
+|$id=|get|@tweet.id|
 |$text=|get|@tweet.text|
 |$user=|get|@tweet.user.name|
 |$avatar=|get|@tweet.user.profile_image_url|
@@ -66,11 +71,11 @@
 |$color=|get|@tweet.user.profile_text_color|
 |$border_color=|get|@tweet.user.profile_sidebar_border_color|
 
-!|scenario| tweet |i|
+!|scenario| show tweet |i|
 |parse tweet|Tweet[@i]|
 |check|echo|${tweet_template}||
 
-!|scenario| say |text|
+!|scenario| tweet|text|
 |twitter|
 |status|@text|
 |post|statuses/update.json|

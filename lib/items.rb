@@ -23,6 +23,7 @@ module Figaro
     end
 
     def self.values=(values)
+      puts "#{values.class}"
       @@items = values
     end
 
