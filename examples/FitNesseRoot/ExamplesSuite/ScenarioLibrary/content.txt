@@ -1,3 +1,7 @@
+|scenario|green|
+|start|do|
+|check|echo|echo|echo|
+
 |scenario| verify succeeded |
 |check| code |200|
 |check| body ||

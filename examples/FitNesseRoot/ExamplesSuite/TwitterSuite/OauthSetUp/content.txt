@@ -19,8 +19,10 @@
 
 *!
 
-|comment|
 |script|
+|green|
+
+|comment|
 |request token|
 |access token|pin||token||secret|
 
