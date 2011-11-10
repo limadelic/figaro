@@ -12,7 +12,7 @@
 |jira|ultidev|
 |select|${jira_fields}|from|ultidev.getIssuesFromFilter '$jira_stories'|
 
-|query:Items|
+|query:Results|
 |key|summary|story|cos|
-|UP-3064||||
+|UP-3081||||
 |ULTI-37440||||

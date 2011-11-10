@@ -1,6 +1,6 @@
 module Figaro
 
-  class Items
+  class Results
 
     def self.fields=(fields)
       @@fields = fields.split(',').map do |field|
@@ -23,7 +23,6 @@ module Figaro
     end
 
     def self.values=(values)
-      puts "#{values.class}"
       @@items = values
     end
 
@@ -34,28 +33,6 @@ module Figaro
         end
       end
     end
-
-=begin
-    def index(index)
-      @index = index
-    end
-
-    def method_missing(symbol, *args, &blk)
-      @sut = eval "@vars['#{symbol}']#{args.first}"
-    end
-
-    def respond_to?(symbol, include_private=false)
-      super || has_field?("#{symbol}")
-    end
-
-    def has_field?(display)
-      @@fields.any? { |x| x[:display] == display }
-    end
-
-    def field(display)
-      @@fields.find { |x| x[:display] == display }
-    end
-=end
 
   end
 

@@ -186,3 +186,157 @@ RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCard
 # => 200 OK | application/json 704 bytes
 RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
 # => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/ULTI-37440\",\"ExternalCardID\":\"ULTI-37440\",\"TypeId\":18076557,\"Title\":\"Testing Akira\",\"ExternalSystemName\":\"jira\",\"Description\":\"0 N/A\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"178", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157445", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157447", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/ULTI-37440\",\"ExternalCardID\":\"ULTI-37440\",\"TypeId\":18076557,\"Title\":\"Testing Akira\",\"ExternalSystemName\":\"jira\",\"Description\":\"0 N/A\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"178", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157450", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/ULTI-37440\",\"ExternalCardID\":\"ULTI-37440\",\"TypeId\":18076557,\"Title\":\"Testing Akira\",\"ExternalSystemName\":\"jira\",\"Description\":\"0 N/A\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"178", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157451", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/ULTI-37440\",\"ExternalCardID\":\"ULTI-37440\",\"TypeId\":18076557,\"Title\":\"Testing Akira\",\"ExternalSystemName\":\"jira\",\"Description\":\"0 N/A\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"178", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157452", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157453", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3077\",\"ExternalCardID\":\"UP-3077\",\"TypeId\":18076557,\"Title\":\"Create Entities\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to easily test the business rules\\nI want to be able to create Entities\\nUsing Fitnesse (aka Slim) to provision data. . Add an Entity\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"311", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18157454", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186020", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186021", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186037", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186038", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186039", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186040", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186049", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186050", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 81 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186051", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 128 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186052", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 83 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 82 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186057", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186058", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 82 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186969", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186970", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 82 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186971", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186972", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 82 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"ExternalSystemUrl\":\"http://ultidev/browse/UP-3081\",\"ExternalCardID\":\"UP-3081\",\"TypeId\":18076557,\"Title\":\"Add Gap Analysis rules to Engine\",\"ExternalSystemName\":\"jira\",\"Description\":\"In order to measure an Employees Goal achievement \\nI would like to have business rules that calculate the employees Talent Gap Analysis\\n . Setup Entities needed for Gap Analysis\\n. Execute Gap Analysis rules via Droolz\\n\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"408", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186974", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/AddCard/Lane/18078131/Position/0", "{\"TypeId\":18076557,\"Title\":\"test\"}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"34", "Content-Type"=>"application/json"
+# => 200 OK | application/json 129 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/DeleteCard/18186975", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 84 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetBoardIdentifiers", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 619 bytes
+RestClient.get "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/GetCardByExternalId/UP-3064", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 704 bytes
+RestClient.post "http://akira.leankitkanban.com/Kanban/Api/Board/18076193/MoveCard/18085950/Lane/18078131/Position/0", "", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"0", "Content-Type"=>"application/json"
+# => 200 OK | application/json 82 bytes

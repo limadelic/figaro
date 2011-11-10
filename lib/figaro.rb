@@ -1,5 +1,5 @@
 require "rubygems"
-require "items"
+require "results"
 
 module Figaro
 
@@ -12,8 +12,8 @@ module Figaro
   end
 
   def select_from(fields, query)
-    Items.fields = fields
-    Items.values = eval query
+    Results.fields = fields
+    Results.values = eval query
   end
 
   def wait(duration)

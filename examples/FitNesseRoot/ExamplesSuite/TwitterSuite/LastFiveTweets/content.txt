@@ -3,11 +3,11 @@
 |scenario|last 5 from|timeline|
 | load last |5| tweets from |@timeline|
 |check|get|Tweet.count|5|
-|tweet|0|
-|tweet|1|
-|tweet|2|
-|tweet|3|
-|tweet|4|
+|show tweet|0|
+|show tweet|1|
+|show tweet|2|
+|show tweet|3|
+|show tweet|4|
 
 *!
 

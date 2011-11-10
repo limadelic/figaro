@@ -1,0 +1,40 @@
+|comment|
+|script|json|
+|{{{
+{
+  "Band": {
+    "Name": "The Doors",
+    "Discography":[
+      { "Year": 1967, "Title": "The Doors" },
+      { "Year": 1967, "Title": "Strange Days" },
+      { "Year": 1970, "Title": "Morrison Hotel" },
+      { "Year": 1971, "Title": "L.A. Woman" }
+    ],
+    "Singer": {
+      "Name": "Jim"
+      "Last Name": "Morrison"
+      "Address": {
+        "Street": "snakepit",
+        "Zip": "666",
+        "State": "CA"
+      }
+    }
+  }
+}
+}}}|
+|Band|
+|Name|The Doors|
+|Discography|
+|Year|Title|
+|1967|The Doors|
+|1967|Strange Days|
+|1970|Morrison Hotel|
+|1971|L.A. Woman|
+|Singer|
+||Name|Jim|
+||Last Name|Morrison|
+||Address|
+|||Street|Zip|State|
+|||snakepit|666|CA|
+
+

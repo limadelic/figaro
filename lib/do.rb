@@ -1,5 +1,4 @@
 require "figaro"
-require "items"
 
 module Figaro
 

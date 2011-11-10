@@ -10,12 +10,12 @@
 |Fabienne|
 |wait|5|
 |load last |6| tweets from |home|
-|tweet|5|
-|tweet|4|
-|tweet|3|
-|tweet|2|
-|tweet|1|
-|tweet|0|
+|show tweet|5|
+|show tweet|4|
+|show tweet|3|
+|show tweet|2|
+|show tweet|1|
+|show tweet|0|
 
 |scenario|delete last 3|
 |load last |3| tweets from |user|

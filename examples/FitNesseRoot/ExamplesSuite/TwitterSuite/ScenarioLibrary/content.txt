@@ -75,10 +75,13 @@
 |parse tweet|Tweet[@i]|
 |check|echo|${tweet_template}||
 
-!|scenario| tweet|text|
+!|scenario| tweet |text|
 |twitter|
 |status|@text|
 |post|statuses/update.json|
+
+!|scenario| say |something|
+|tweet|@something|
 
 !|scenario| delete |id|
 |twitter|
