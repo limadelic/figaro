@@ -8,6 +8,7 @@ class Statement
 
   def initialize(statement)
     @statement = statement
+    puts "exec> #{statement}"
   end
 
   def exec(executor)

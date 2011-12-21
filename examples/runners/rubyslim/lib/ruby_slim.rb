@@ -24,6 +24,7 @@ class RubySlim
       length = socket.read(6).to_i
       socket.read(1); #skip colon
       command = socket.read(length);
+      puts 'in>' + command
       if command.downcase != "bye"
         instructions = ListDeserializer.deserialize(command);
         results = @executor.execute(instructions)

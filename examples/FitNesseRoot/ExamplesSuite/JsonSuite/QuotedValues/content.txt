@@ -1,0 +1,5 @@
+|script|json|
+|set|Value|to|Alan Smithee|
+|check|get|Value|Alan Smithee|
+|set|Value|to|"quote" by Alan Smithee|
+|check|get|Value|"quote" by Alan Smithee|

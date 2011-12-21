@@ -10,6 +10,7 @@ module ListSerializer
       result += length_string(item.jlength)
       result += item + ":"
     end
+    puts 'out>' + result + ']'
     result += "]"
   end
 

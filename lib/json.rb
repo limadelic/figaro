@@ -12,7 +12,7 @@ module Figaro
 
     attr_reader :sut
 
-    def initialize(content, entity='Item')
+    def initialize(content='{}', entity='Item')
       Format.slim_arg content
       load content
     rescue
@@ -29,7 +29,12 @@ module Figaro
     end
 
     def set_to(field, value)
-      eval "@sut.#{field} = #{value}"
+      eval "@sut.#{field} = #{format value}"
+    end
+
+    def format(value)
+      return "\"#{value.gsub '"', '\"'}\"" if value.is_a? String
+      value
     end
 
     def get(field)
